@@ -41,7 +41,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}
         </footer>
       </div>
     </div>
